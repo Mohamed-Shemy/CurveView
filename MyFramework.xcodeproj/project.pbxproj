@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D94FAF432520CDF90025F49A /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D94FAF412520CDF90025F49A /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D94FAF4E2520CFAD0025F49A /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FAF4D2520CFAC0025F49A /* CurveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D94FAF3E2520CDF90025F49A /* MyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94FAF412520CDF90025F49A /* MyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFramework.h; sourceTree = "<group>"; };
 		D94FAF422520CDF90025F49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D94FAF4D2520CFAC0025F49A /* CurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				D94FAF412520CDF90025F49A /* MyFramework.h */,
+				D94FAF4D2520CFAC0025F49A /* CurveView.swift */,
 				D94FAF422520CDF90025F49A /* Info.plist */,
 			);
 			path = MyFramework;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					D94FAF3D2520CDF90025F49A = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94FAF4E2520CFAD0025F49A /* CurveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		D94FAF472520CDF90025F49A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 57CN6FH4FY;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = shemy.MyFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		D94FAF482520CDF90025F49A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 57CN6FH4FY;
